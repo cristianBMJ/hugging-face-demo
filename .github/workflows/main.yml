@@ -20,6 +20,11 @@ jobs:
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
-        run:  git push --force https://CristianJ:$HF@huggingface.co/spaces/CristianJ/Demo main
+        run: git remote set-url origin https://CristianJ:$HF@huggingface.co/spaces/CristianJ/Demo 
+        run: git pull origin
+
+
+        
+        #git push --force 
        # run: git clone https://huggingface.co/spaces/CristianJ/Demo
  
