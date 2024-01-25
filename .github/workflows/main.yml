@@ -21,6 +21,5 @@ jobs:
         env:
           HF: ${{ secrets.HF }}
         run: git remote set-url origin https://CristianJ:$HF@huggingface.co/spaces/CristianJ/Demo 
-      - name: Pull origin
-        run: git pull origin
+
         
